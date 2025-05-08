@@ -27,7 +27,7 @@ local function init()
 					DarkRP.talkToPerson(v, col, "[Vox Imperial] " .. ply:Nick(), Color(255, 255, 0, 255), text, ply)
 				end
 			end
-			hook.Call("playerAdverted", nil, ply, args)
+			hook.Call("playerAdverted", nil, ply, args)			c:\Users\artur\OneDrive\Documents\GitHub\darkrp-old-advert\lua\autorun\darkrp-full-classic-advert.lua
 			return args, DoSay
 		end, 1.5)
 	else
