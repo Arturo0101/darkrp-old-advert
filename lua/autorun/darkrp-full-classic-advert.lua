@@ -24,14 +24,14 @@ local function init()
 				end
 				for k,v in pairs(player.GetAll()) do
 					local col = team.GetColor(ply:Team())
-					DarkRP.talkToPerson(v, col, "[Advert] " .. ply:Nick(), Color(255, 255, 0, 255), text, ply)
+					DarkRP.talkToPerson(v, col, "[Vox Imperial] " .. ply:Nick(), Color(255, 255, 0, 255), text, ply)
 				end
 			end
 			hook.Call("playerAdverted", nil, ply, args)
 			return args, DoSay
 		end, 1.5)
 	else
-		DarkRP.addChatReceiver("/advert", "advertise", function(ply) return true end)
+		DarkRP.addChatReceiver("/imp", "advertise", function(ply) return true end)
 	end
 end
 
